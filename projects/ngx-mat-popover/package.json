@@ -1,0 +1,29 @@
+{
+  "name": "ngx-mat-popover",
+  "description": "angular material simple popover",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sam Lin",
+    "email": "maxisam@gmail.com"
+  },
+  "homepage": "https://github.com/maxisam/ngx-mat-popover",
+  "license": "MIT",
+  "publishConfig": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxisam/ngx-mat-popover"
+  },
+  "bugs": {
+    "url": "https://github.com/maxisam/ngx-mat-popover/issues"
+  },
+  "keywords": [
+    "angular",
+    "popover"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
+    "@angular/material": ">=6.0.0",
+    "@angular/cdk": ">=6.0.0"
+  }
+}

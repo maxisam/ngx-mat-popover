@@ -1,0 +1,21 @@
+<div class="demo-content">
+  <ng-template #popoverContent>
+    <div class="title">This is a popover missing from angular/material</div>
+    <div class="content">
+      This popover is pretty simple. It uses material menu to work like a popover. The benefit of this approach is it is
+      super lightweigt. And it is very flexible as well.
+    </div>
+    <div class="action">
+      <button mat-button (click)="onClose()">close</button>
+      <button mat-raised-button color="accent" (click)="onConfirm()">CONFIRM</button>
+    </div>
+  </ng-template>
+  <ngx-mat-popover
+    [popoverContent]="popoverContent"
+    [xPosition]="'before'"
+    [yPosition]="'above'"
+    #popover="ngxMatPopover"
+  >
+    <button mat-button>Need a popover?</button>
+  </ngx-mat-popover>
+</div>

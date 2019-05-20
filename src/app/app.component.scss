@@ -1,0 +1,16 @@
+.title {
+  text-align: left;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.action {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.demo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}

@@ -1,0 +1,19 @@
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// use fontawesome instead of Material, which is too big
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+@import 'main-variables';
+
+@import '../../projects/ngx-mat-popover/src/lib/ngx-mat-popover.component.theme.scss';
+@mixin custom-components-theme($theme) {
+}
+
+@mixin custom-components-layout($typography-config: null) {
+  @include ngx-mat-popover($typography-config);
+}
+
+@include custom-components-layout();
