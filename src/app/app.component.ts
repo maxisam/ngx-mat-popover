@@ -11,8 +11,6 @@ export class AppComponent {
   isConfirm = false;
   @ViewChild('popover') popover: NgxMatPopoverComponent;
   constructor() {}
-  ngOnInit() {}
-
   onClose() {
     this.isConfirm = false;
     this.popover.close();
