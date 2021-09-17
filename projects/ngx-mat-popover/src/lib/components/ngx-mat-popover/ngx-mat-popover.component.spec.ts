@@ -1,16 +1,18 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatMenuModule } from '@angular/material/menu';
+import { NgxMatMenuTriggerDirective } from '../../directives/ngx-mat-menu-trigger.directive';
 import { NgxMatPopoverComponent } from './ngx-mat-popover.component';
 
 describe('NgxMatPopoverComponent', () => {
   let component: NgxMatPopoverComponent;
   let fixture: ComponentFixture<NgxMatPopoverComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
-      declarations: [NgxMatPopoverComponent]
+      imports: [MatMenuModule],
+      declarations: [NgxMatPopoverComponent, NgxMatMenuTriggerDirective]
     }).compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(NgxMatPopoverComponent);

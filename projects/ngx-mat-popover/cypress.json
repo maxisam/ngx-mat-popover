@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "projects/ngx-mat-popover/cypress/integration",
+  "supportFile": "projects/ngx-mat-popover/cypress/support/index.ts",
+  "videosFolder": "projects/ngx-mat-popover/cypress/videos",
+  "screenshotsFolder": "projects/ngx-mat-popover/cypress/screenshots",
+  "pluginsFile": "projects/ngx-mat-popover/cypress/plugins/index.ts",
+  "fixturesFolder": "projects/ngx-mat-popover/cypress/fixtures",
+  "baseUrl": "http://localhost:4200"
+}

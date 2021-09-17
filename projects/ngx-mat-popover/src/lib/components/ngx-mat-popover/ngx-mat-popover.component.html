@@ -1,0 +1,19 @@
+<mat-menu #popover [xPosition]="xPosition" [yPosition]="yPosition" class="ngx-mat-popover" [hasBackdrop]="false">
+  <ng-template matMenuContent>
+    <span
+      mat-menu-item
+      [disableRipple]="true"
+      (keydown.tab)="$event.stopPropagation()"
+      (click)="$event.stopPropagation()"
+      class="mat-popover"
+    >
+      <!-- popover content begin -->
+      <ng-container *ngTemplateOutlet="popoverContent"></ng-container>
+      <!-- popover content end  -->
+    </span>
+  </ng-template>
+</mat-menu>
+
+<div [ngxMatMenuTriggerFor]="popover" #trigger="ngxMatMenuTrigger">
+  <ng-content></ng-content>
+</div>
