@@ -50,3 +50,6 @@ package-lock.json
 
 # Angular
 .angular
+
+# Cypress
+cypress/videos

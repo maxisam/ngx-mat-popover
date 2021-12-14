@@ -4,9 +4,7 @@
   "version": "0.0.2",
   "homepage": "https://github.com/maxisam/ngx-mat-popover",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "http://repository.angelis.ltd"
-  },
+  "publishConfig": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/maxisam/ngx-mat-popover"
