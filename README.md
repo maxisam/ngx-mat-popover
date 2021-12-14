@@ -17,6 +17,8 @@ This library simply use the material menu to work like a popover
 
 Kudos to
 
+- Kevin Bonnoron <2421321+KevinBonnoron@users.noreply.github.com> for upgrading library to Angular 13
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.
 
 <img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" height="80" title="BrowserStack Logo" alt="BrowserStack Logo" />

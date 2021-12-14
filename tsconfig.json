@@ -22,11 +22,11 @@
       "es2020",
       "dom"
     ],
-    "paths": {
-      "ngx-mat-popover": [
-        "dist/ngx-mat-popover"
-      ]
-    }
+    // "paths": {
+    //   "ngx-mat-popover": [
+    //     "dist/ngx-mat-popover"
+    //   ]
+    // }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
