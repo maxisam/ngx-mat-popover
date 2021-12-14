@@ -1,3 +1,14 @@
+.position-bar {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+mat-button-toggle-group + mat-button-toggle-group {
+  margin: 0 1rem;
+}
+
 .title {
   text-align: left;
   font-weight: bolder;

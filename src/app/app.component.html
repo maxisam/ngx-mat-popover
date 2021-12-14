@@ -1,11 +1,15 @@
-<button mat-button (click)="xPosition = 'before'">before</button>
-<button mat-button (click)="xPosition = 'after'">after</button>
-<button mat-button (click)="yPosition = 'above'">above</button>
-<button mat-button (click)="yPosition = 'below'">below</button>
-
+<div class="position-bar">
+  <mat-button-toggle-group [(ngModel)]="xPosition" name="xPosition" aria-label="x-position">
+    <mat-button-toggle value="before">before</mat-button-toggle>
+    <mat-button-toggle value="after">after</mat-button-toggle>
+  </mat-button-toggle-group>
+  <mat-button-toggle-group [(ngModel)]="yPosition" name="yPosition" aria-label="y-position">
+    <mat-button-toggle value="above">above</mat-button-toggle>
+    <mat-button-toggle value="below">below</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
 <div class="demo-content">
-  <ngx-mat-popover [popoverContent]="popoverContent" [xPosition]="xPosition" [yPosition]="yPosition"
-    #popover="ngxMatPopover" mode="toggle">
+  <ngx-mat-popover [popoverContent]="popoverContent" [xPosition]="xPosition" [yPosition]="yPosition" #popover="ngxMatPopover" mode="toggle">
     <button mat-button data-cy="button">Need a popover?</button>
   </ngx-mat-popover>
 
