@@ -1,10 +1,10 @@
 // @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@use '~@angular/material' as mat;
 // use fontawesome instead of Material, which is too big
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import '~@angular/material/theming';
 
 // always include only once per project
-@include mat-core();
+@include mat.core();
 
 @import 'main-variables';
 

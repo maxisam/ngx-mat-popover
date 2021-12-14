@@ -1,21 +1,24 @@
+<button mat-button (click)="xPosition = 'before'">before</button>
+<button mat-button (click)="xPosition = 'after'">after</button>
+<button mat-button (click)="yPosition = 'above'">above</button>
+<button mat-button (click)="yPosition = 'below'">below</button>
+
 <div class="demo-content">
+  <ngx-mat-popover [popoverContent]="popoverContent" [xPosition]="xPosition" [yPosition]="yPosition"
+    #popover="ngxMatPopover" mode="toggle">
+    <button mat-button data-cy="button">Need a popover?</button>
+  </ngx-mat-popover>
+
   <ng-template #popoverContent>
     <div class="title">This is a popover missing from angular/material</div>
     <div class="content">
-      This popover is pretty simple. It uses material menu to work like a popover. The benefit of this approach is it is
-      super lightweigt. And it is very flexible as well.
+      This popover is pretty simple. It uses material menu to work like a popover.<br />
+      The benefit of this approach is it is super lightweigt.<br /><br />
+      And it is very flexible as well.
     </div>
     <div class="action">
       <button mat-button (click)="onClose()">close</button>
       <button mat-raised-button color="accent" (click)="onConfirm()">CONFIRM</button>
     </div>
   </ng-template>
-  <ngx-mat-popover
-    [popoverContent]="popoverContent"
-    [xPosition]="'before'"
-    [yPosition]="'above'"
-    #popover="ngxMatPopover"
-  >
-    <button mat-button>Need a popover?</button>
-  </ngx-mat-popover>
 </div>

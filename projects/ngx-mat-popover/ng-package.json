@@ -1,6 +1,9 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/lib",
+  "dest": "../../dist/ngx-mat-popover",
+  "assets": [
+    "README.MD"
+  ],
   "lib": {
     "entryFile": "src/public-api.ts"
   }

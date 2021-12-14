@@ -1,0 +1,24 @@
+::ng-deep .ngx-mat-popover {
+  min-width: inherit;
+  width: none !important;
+  max-width: inherit !important;
+
+  .mat-menu-item {
+    height: auto;
+    white-space: normal;
+    line-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    &.cdk-program-focused:not([disabled]),
+    &:hover:not([disabled]) {
+      background: inherit;
+    }
+  }
+
+  .mat-menu-content {
+    padding: 0;
+  }
+}
