@@ -30,15 +30,19 @@
             "main": "projects/ngx-mat-popover/src/test.ts",
             "tsConfig": "projects/ngx-mat-popover/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-mat-popover/karma.conf.js"
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "projects/ngx-mat-popover/**/*.ts",
-              "projects/ngx-mat-popover/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/ngx-mat-popover/**/*.ts", "projects/ngx-mat-popover/**/*.html"]
           }
         }
       }
@@ -66,14 +70,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
