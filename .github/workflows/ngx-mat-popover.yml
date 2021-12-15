@@ -40,7 +40,9 @@ jobs:
               with:
                 browser: chrome
                 headless: true
-                build: yarn cypress:run
+                start: library-host:serve:production
+                wait-on: 'http://localhost:4200'
+                ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
               env:
                 CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
                 CYPRESS_PROJECT_ID: ${{ secrets.PROJECT_ID }}
