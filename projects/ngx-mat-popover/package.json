@@ -1,7 +1,7 @@
 {
   "name": "ngx-mat-popover",
   "description": "angular material simple popover",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0",
   "homepage": "https://github.com/maxisam/ngx-mat-popover",
   "license": "MIT",
   "author": {
