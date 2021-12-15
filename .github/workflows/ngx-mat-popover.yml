@@ -40,7 +40,7 @@ jobs:
               with:
                 browser: chrome
                 headless: true
-                start: library-host:serve:production
+                start: ng library-host:serve:production
                 wait-on: 'http://localhost:4200'
                 ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
               env:
