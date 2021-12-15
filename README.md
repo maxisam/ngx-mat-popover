@@ -1,5 +1,7 @@
 # ngx-mat-popover
 
+[![ngx-mat-popover](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/deorze/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/deorze/runs)
+
 A simple popover for people who have used angular material
 
 This library simply use the material menu to work like a popover
