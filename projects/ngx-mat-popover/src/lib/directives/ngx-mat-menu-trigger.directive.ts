@@ -1,5 +1,5 @@
 import { Directive, Input } from '@angular/core';
-import { MatMenuPanel, _MatMenuTriggerBase } from '@angular/material/menu';
+import { MatMenuPanel, MatMenuTrigger } from '@angular/material/menu';
 
 @Directive({
   selector: `[ngxMatMenuTriggerFor]`,
